@@ -2,6 +2,8 @@
 
 import React from "react";
 import { FlashCardArray } from "react-flashcards";
+import Image from "next/image";
+
 
 import Link from "next/link";
 
@@ -39,21 +41,19 @@ const ReactCards = () => {
     },
     {
       id: 3,
-      front: <h2>What is the difference between state and props in React?</h2>,
+      front: <h2>What is state in react?</h2>,
       back: (
         <p>
-          state is used for mutable data within a component, while props are for
-          passing data from parent to child components.
+        State of a component is an object that holds some information that may change over the lifetime of the component
         </p>
       ),
     },
     {
       id: 4,
-      front: <h2>How do you handle side effects in React components</h2>,
+      front: <h2>What are props in React?</h2>,
       back: (
         <p>
-          The useEffect hook is how you can handle side effects like fetching
-          data.
+        Props are inputs to components. They are single values or objects containing a set of values that are passed to components on creation similar to HTML-tag attributes
         </p>
       ),
     },
@@ -78,16 +78,25 @@ const ReactCards = () => {
       front: (
         <h2>
           What is the purpose of key prop in React lists, and why is it
-          important for performance?{" "}
+          important for performance?
         </h2>
       ),
       back: (
-        <p>
-          {" "}
+        <>
+        <p  className="mb-8">
+      
           The key prop helps React identify which items in a list are changed,
           added, or removed. It helps minimize the number of components that
           need to be re-rendered, making the application more efficient.
         </p>
+
+        <Image
+            src="/keys.png"
+            alt="export image"
+            height={500}
+            width={500}
+          />
+        </>
       ),
     },
     {
@@ -139,6 +148,48 @@ const ReactCards = () => {
         </p>
       ),
     },
+    {
+      id: 12,
+      front: <h2>What is the children prop?</h2>,
+      back: (
+        <p>
+       Children is a prop that allows you to pass components as data to other components, just like any other prop you use.
+        </p>
+      ),
+    },
+    {
+      id: 13,
+      front: <h2>Why does React use className instead of class?</h2>,
+      back: (
+        <p>
+      The attribute class is a keyword in JavaScript, and JSX is an extension of JavaScript. That's the principle reason why React uses className instead of class. 
+        </p>
+      ),
+    },
+    {
+      id: 14,
+      front: <h2>What is Development Mode in React?</h2>,
+      back: (
+        <p>
+     Development mode in React is the environment you use while building and debugging your application. It's designed to help you catch mistakes early and understand what's happening in your app.
+     </p>
+      ),
+    },
+    {
+      id: 14,
+      front: <h2>How do you import and export components in React?</h2>,
+      back: (
+        <>
+          <p className="mb-8">You should use default for exporting the components</p>
+          <Image
+            src="/export.png"
+            alt="export image"
+            height={500}
+            width={500}
+          />
+        </>
+      ),
+    },
   ];
 
   return (
@@ -148,7 +199,7 @@ const ReactCards = () => {
         cards={flashcards}
         controls={true}
         showCount={true}
-        autoPlay={true}
+        autoPlay={false}
         onCardChange={(id, index) =>
           console.log(`Card change detected: ID ${id}, Index: ${index}`)
         }
@@ -160,7 +211,7 @@ const ReactCards = () => {
       />
       <Link
         href="/"
-        className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+        className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 md:w-42 md:mx-auto sm:h-12 px-4 sm:px-5 sm:w-auto"
       >
         Homepage
       </Link>
