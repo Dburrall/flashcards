@@ -4,7 +4,7 @@ import React from "react";
 import { FlashCardArray } from "react-flashcards";
 import Image from "next/image";
 
-import "./React.css";
+import "../../src/Styles/Flashcards.css"
 
 import Link from "next/link";
 
