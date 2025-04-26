@@ -9,6 +9,7 @@ This is open source and **anyone** can contribute to the questions and answers
 
 Step 1. Clone the repo down\
 Step 2. Run npm i\
+Step 3. Make sure you have at least node 20 installed. (you can use [node version manager](https://github.com/nvm-sh/nvm))\
 Step 3. Run npm run dev to spin up the server
 
 This project uses the [Flash card module](https://github.com/desklib/react-flashcards) 
