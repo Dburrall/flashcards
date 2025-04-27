@@ -12,7 +12,6 @@ Step 2. Run npm i\
 Step 3. Make sure you have at least node 20 installed. (you can use [node version manager](https://github.com/nvm-sh/nvm))\
 Step 3. Run npm run dev to spin up the server
 
-This project uses the [Flash card module](https://github.com/desklib/react-flashcards) 
 Each section has a front and a back, you can follow any example from other flashcards set up on the project.
 
 Feel free to Fork this repo and make it your own! 
