@@ -1,0 +1,77 @@
+[
+	{
+		"id": 1,
+		"front": "What happens if you exclude the dependency array from your useEffect?",
+		"back": "The useEffect will run after every component update, including prop changes."
+	},
+	{
+		"id": 2,
+		"front": "What is the virtual DOM, and how does React use it to optimize performance?",
+		"back": "Virtual DOM is a lightweight copy of the actual DOM. React uses it to detect changes to it and then only updates the nodes needed instead of rendering the entire page."
+	},
+	{
+		"id": 3,
+		"front": "What is state in react?",
+		"back": "State of a component is an object that holds some information that may change over the lifetime of the component."
+	},
+	{
+		"id": 4,
+		"front": "What are props in React?",
+		"back": "Props are inputs to components. They are single values or objects containing a set of values that are passed to components on creation, similar to HTML-tag attributes."
+	},
+	{
+		"id": 5,
+		"front": "What is the virtual DOM and why is it important for performance?",
+		"back": "The virtual DOM is an in-memory representation of the real DOM elements. The Virtual DOM allows React to perform a more intelligent update, meaning it can quickly update only the necessary parts of the UI, rather than re-rendering the entire page."
+	},
+	{
+		"id": 6,
+		"front": "What is the purpose of key prop in React lists, and why is it important for performance?",
+		"back": "The key prop helps React identify which items in a list are changed, added, or removed. This helps minimize the number of components that need to be re-rendered, making the application more efficient."
+	},
+	{
+		"id": 7,
+		"front": "What is state in React?",
+		"back": "State of a component is an object that holds some information that may change over the lifetime of the component. Const [state, setState] = setState(false);"
+	},
+	{
+		"id": 8,
+		"front": "What are props in React?",
+		"back": "Props are objects in react that allow us to pass information to components."
+	},
+	{
+		"id": 9,
+		"front": "What are the 3 React phases?",
+		"back": "1. Render Phase 2. Commit phase 3. Clean up Phase"
+	},
+	{
+		"id": 10,
+		"front": "What are fragments in React, and when should you use them?",
+		"back": "A syntax that allows you to group elements without a wrapper node like div. They are useful because they have no effect on layout or styles."
+	},
+	{
+		"id": 11,
+		"front": "What is a useReducer and When would you use it?",
+		"back": "useReducer is a hook in React that allows you to add a reducer to your component. You would use it when you have a lot of state that you need to manage."
+	},
+	{
+		"id": 12,
+		"front": "What is the children prop?",
+		"back": "Children is a prop that allows you to pass components as data to other components, just like any other prop you use."
+	},
+	{
+		"id": 13,
+		"front": "Why does React use className instead of class?",
+		"back": "The attribute class is a keyword in JavaScript, and JSX is an extension of JavaScript. That's the principle reason why React uses className instead of class."
+	},
+	{
+		"id": 14,
+		"front": "What is Development Mode in React?",
+		"back": "Development mode in React is the environment you use while building and debugging your application. It's designed to help you catch mistakes early and understand what's happening in your app."
+	},
+	{
+		"id": 15,
+		"front": "How do you import and export components in React?",
+		"back": "You should use default for exporting the components."
+	}
+]
