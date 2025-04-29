@@ -21,17 +21,13 @@ export default function Home() {
 					</Link>
 					<a
 						className='rounded-full border border-[#f7df1e] transition-colors flex items-center justify-center hover:bg-[#f7df1e] dark:hover:text-black hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
-						href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app'
-						target='_blank'
-						rel='noopener noreferrer'>
+						href='/Javascript'>
 						Javascript
 					</a>
 
 					<a
 						className='rounded-full  border border-[#0077b5] transition-colors flex items-center justify-center hover:bg-[#0077b5]  dark:hover:text-black hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
-						href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app'
-						target='_blank'
-						rel='noopener noreferrer'>
+						href='/Drupal'>
 						Drupal
 					</a>
 				</div>

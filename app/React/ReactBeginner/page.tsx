@@ -8,8 +8,8 @@ import Link from "next/link";
 
 const ReactCards = () => {
 	return (
-		<div>
-			<h1 className='flex justify-center mb-6 mt-6 font-bold text-2xl'>
+		<div className='bg-[#03071280]  mt-12'>
+			<h1 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-fuchsia-400'>
 				The Basics
 			</h1>
 			<div className='flex justify-center items-center '>
@@ -103,7 +103,7 @@ const ReactCards = () => {
 
 			{/* START OF HOOKS SECTION  */}
 
-			<h2 className='flex justify-center mb-6 mt-6 font-bold text-2xl'>
+			<h2 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-[#5B9BD5]'>
 				Hooks in React
 			</h2>
 			<div className='flex justify-center items-center mt-10 '>
@@ -201,9 +201,81 @@ const ReactCards = () => {
 					/>
 				</div>
 			</div>
+			{/* START OF GENERAL QUESTIONS */}
+			<h2 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-[#0cfac2]'>
+				General React Questions
+			</h2>
+			<div className='flex justify-center items-center mt-10 '>
+				<div className='grid gird-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
+					<Flashcard
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								How do you pass state between components?
+							</h2>
+						}
+						back={
+							<div className='block'>
+								<p className='text-md text-gray-700'>
+									The easiest way is to move the state to a common parent and
+									pass it down through props.
+								</p>
+								<a
+									className='text-blue-600 underline hover:text-blue-800'
+									href='https://react.dev/learn/sharing-state-between-components'
+									target='_blank'>
+									Explanation
+								</a>
+							</div>
+						}
+					/>
+					<Flashcard
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								What happens when a component recieves new props?
+							</h2>
+						}
+						back={
+							<ul className='text-md text-gray-700'>
+								<li>1. Props are updated</li>
+								<li>2. Component re-renders</li>
+								<li>3. Effects may rerun</li>
+								<a
+									className='text-blue-600 underline hover:text-blue-800'
+									href='https://www.zhenghao.io/posts/react-rerender'
+									target='_blank'>
+									{" "}
+									Explanation
+								</a>
+							</ul>
+						}
+					/>
+					<Flashcard
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								Why is there a need to use keys in Lists
+							</h2>
+						}
+						back={
+							<div className='block'>
+								<p className='text-md text-gray-700'>
+									Keys are unique identifiers that help React know which list
+									item to re-render and swap out.
+								</p>
+								<a
+									className='text-blue-600 underline hover:text-blue-800'
+									href='https://react.dev/learn/rendering-lists'
+									target='_blank'>
+									Explanation
+								</a>
+							</div>
+						}
+					/>
+				</div>
+			</div>
+
 			<Link
 				href='/'
-				className='rounded-full white border border-indigo-600 transition-colors flex items-center justify-center bg-white text-background gap-2  dark:hover:bg-[black] dark:hover:text-white font-medium text-sm sm:text-base h-10 md:w-42 mx-auto mt-8 sm:h-12 px-4 sm:px-5 w-32'>
+				className='rounded-full white border border-indigo-600 transition-colors flex items-center justify-center bg-white text-background gap-2  dark:hover:bg-[black] dark:hover:text-white font-medium text-sm sm:text-base h-10 md:w-42 mx-auto mt-8 sm:h-12 px-4 sm:px-5 w-32 mb-12'>
 				Homepage
 			</Link>
 		</div>

@@ -1,5 +1,4 @@
 import React from "react";
-import { FlashCardArray } from "react-flashcards";
 
 import Link from "next/link";
 
@@ -7,7 +6,7 @@ const ReactPage = () => {
 	return (
 		<div className='grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]'>
 			<main className='flex flex-col gap-[32px] row-start-2 items-center sm:items-start'>
-				<h1 className='text-2xl'>React</h1>
+				<h1 className='text-3xl text-[#5B9BD5] bold'>React</h1>
 
 				<div className='flex gap-4 items-center flex-col sm:flex-row'>
 					<Link
