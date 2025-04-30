@@ -151,13 +151,13 @@ const ReactCards = () => {
 			<div className='flex justify-center items-center mt-10 '>
 				<div className='grid gird-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
 					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
-						back={<p className='text-md text-gray-700'>Answer</p>}
-					/>
-					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
-						back={<p className='text-md text-gray-700'>Answer</p>}
-					/>
+            front={<h2 className='text-xl font-bold text-black '>Wnat does Array.map() do?</h2>}
+            back={<p className='text-md text-gray-700'>The map() method creates a new array by applying a function to each element in the original array</p>}
+          />
+          <Flashcard
+            front={<h2 className='text-xl font-bold text-black '>What does Array.filter() do?</h2>}
+            back={<p className='text-md text-gray-700'>The filter() method creates a new array, including only the elements that pass the test implemented by the provided function</p>}
+          />
 					<Flashcard
 						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
 						back={<p className='text-md text-gray-700'>Answer</p>}
