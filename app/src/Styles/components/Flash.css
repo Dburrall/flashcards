@@ -3,6 +3,11 @@
 	width: 300px;
 	height: 200px;
 	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+
+.perspective:hover {
+	transform: translateY(-1.5rem);
 }
 
 .preserve-3d {

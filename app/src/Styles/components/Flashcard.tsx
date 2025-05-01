@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./Flash.css";
 
-const Flashcard = ({ front, back, className }) => {
+type FlashcardProps = {
+	front: string;
+	back: string;
+	className?: string;
+};
+
+const Flashcard = ({ front, back, className }: FlashcardProps) => {
 	const [flipped, setFlipped] = useState(false);
 
 	return (
