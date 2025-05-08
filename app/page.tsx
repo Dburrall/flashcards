@@ -14,11 +14,11 @@ export default function Home() {
 				</ol>
 
 				<div className='flex gap-4 items-center flex-col sm:flex-row'>
-					<Link
+					<a
 						href='/React'
 						className='rounded-full  border border-[#61dafb] hover:border-[#61dafb] transition-colors flex items-center justify-center hover:bg-[#61dafb] dark:hover:text-black  font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'>
 						React
-					</Link>
+					</a>
 					<a
 						className='rounded-full border border-[#f7df1e] transition-colors flex items-center justify-center hover:bg-[#f7df1e] dark:hover:text-black hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
 						href='/Javascript'>
@@ -29,6 +29,11 @@ export default function Home() {
 						className='rounded-full  border border-[#0077b5] transition-colors flex items-center justify-center hover:bg-[#0077b5]  dark:hover:text-black hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
 						href='/Drupal'>
 						Drupal
+					</a>
+					<a
+						className='rounded-full  border border-[#701516] transition-colors flex items-center justify-center hover:bg-[#701516]  dark:hover:text-white hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
+						href='/Ruby'>
+						Ruby
 					</a>
 				</div>
 			</main>

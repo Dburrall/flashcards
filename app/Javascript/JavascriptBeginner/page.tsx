@@ -6,7 +6,7 @@ import Image from "next/image";
 import Flashcard from "@/app/src/Styles/components/Flashcard";
 import Link from "next/link";
 
-const ReactCards = () => {
+const JavascriptCards = () => {
 	return (
 		<div className='bg-[#03071280]  mt-12'>
 			<h1 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-[#f7df1e]'>
@@ -332,4 +332,4 @@ const ReactCards = () => {
 	);
 };
 
-export default ReactCards;
+export default JavascriptCards;

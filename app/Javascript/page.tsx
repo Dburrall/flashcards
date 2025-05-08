@@ -16,7 +16,7 @@ const ReactPage = () => {
 					</Link>
 					<Link
 						className='rounded-full border border-[#F97316] transition-colors flex items-center justify-center hover:bg-[#F97316]  hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
-						href='/React/ReactIntermediate'>
+						href='/Javascript/JavascriptIntermediate'>
 						Intermediate
 					</Link>
 
