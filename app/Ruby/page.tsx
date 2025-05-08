@@ -6,17 +6,17 @@ const RubyPage = () => {
 	return (
 		<div className='grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]'>
 			<main className='flex flex-col gap-[32px] row-start-2 items-center sm:items-start'>
-				<h1 className='text-3xl text-[#5B9BD5] bold'>React</h1>
+				<h1 className='text-3xl text-[#701516] bold'>Ruby</h1>
 
 				<div className='flex gap-4 items-center flex-col sm:flex-row'>
 					<Link
-						href='/React/ReactBeginner'
+						href='/Ruby/RubyBeginner'
 						className='rounded-full border border-[#701516] transition-colors flex items-center justify-center hover:bg-[#5B9BD5] dark:hover:text-black hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'>
 						Beginner
 					</Link>
 					<Link
 						className='rounded-full border border-[#F97316] transition-colors flex items-center justify-center hover:bg-[#F97316]  hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
-						href='/React/ReactIntermediate'>
+						href='/Ruby/RubyIntermediate'>
 						Intermediate
 					</Link>
 
