@@ -278,13 +278,33 @@ const JavascriptCards = () => {
 			<div className='flex justify-center items-center mt-10 '>
 				<div className='grid gird-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
 					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								What is the difference between a function declaration and a
+								function expression?
+							</h2>
+						}
 						back={
 							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
+								<ul className='text-md text-gray-700'>
+									<li>
+										<span className='text-sky-500 font-bold'>
+											A function declaration
+										</span>{" "}
+										defines a named function using the function keyword. It is
+										hoisted.
+									</li>
+									<li>
+										<span className='text-sky-500 font-bold'>
+											A function expression
+										</span>{" "}
+										defines a function and assigns it to a variable. It can be
+										anonymous or named, but it is not hoisted.
+									</li>
+								</ul>
 								<a
 									className='text-blue-600 underline hover:text-blue-800'
-									href='https://react.dev/learn/sharing-state-between-components'
+									href='https://www.freecodecamp.org/news/function-declaration-vs-function-expression/'
 									target='_blank'>
 									Explanation
 								</a>

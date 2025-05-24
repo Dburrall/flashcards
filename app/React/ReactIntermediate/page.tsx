@@ -10,17 +10,38 @@ const ReactIntermediateCards = () => {
 	return (
 		<div className='bg-[#03071280]  mt-12'>
 			<h1 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-[#f7df1e]'>
-				The Basics
+				Intermediate React
 			</h1>
 			<div className='flex justify-center items-center '>
 				<div className='grid gird-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
 					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
-						back={<p className='text-md text-gray-700'>Answer</p>}
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								What is prop drilling?
+							</h2>
+						}
+						back={
+							<p className='text-md text-gray-700'>
+								passing data (props) down through multiple levels of nested
+								components to reach a deeply nested component that needs the
+								data.
+							</p>
+						}
 					/>
 					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
-						back={<p className='text-md text-gray-700'>Answer</p>}
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								How would you fetch data in a React component, and how do you
+								handle loading and error states?
+							</h2>
+						}
+						back={
+							<p className='text-md text-gray-700'>
+								To fetch data in a React component, I typically use the
+								useEffect hook for side effects and useState to manage the data,
+								loading, and error states.
+							</p>
+						}
 					/>
 					<Flashcard
 						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
@@ -85,21 +106,29 @@ const ReactIntermediateCards = () => {
 				</div>
 			</div>
 
-			{/* START OF {insert} SECTION  */}
+			{/* START OF Intermediate hooks SECTION  */}
 
 			<h2 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-sky-500'>
-				React
+				Intermediate Hooks
 			</h2>
 			<div className='flex justify-center items-center mt-10 '>
 				<div className='grid gird-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
 					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								What is the useContext hook?
+							</h2>
+						}
 						back={
 							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
+								<p className='text-md text-gray-700'>
+									useContext is a React Hook that lets you read and subscribe to
+									context from your component. It lets you access data without
+									prop drilling
+								</p>
 								<a
 									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
+									href='https://react.dev/reference/react/useContext'
 									target='_blank'>
 									Explanation
 								</a>
@@ -107,13 +136,20 @@ const ReactIntermediateCards = () => {
 						}
 					/>
 					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								What is the useCallback hook?
+							</h2>
+						}
 						back={
 							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
+								<p className='text-md text-gray-700'>
+									A hook that returns a memoized version of a function, useful
+									for preventing unnecessary re-renders of child components.
+								</p>
 								<a
 									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
+									href='https://react.dev/reference/react/useCallback'
 									target='_blank'>
 									Explanation
 								</a>
@@ -121,10 +157,17 @@ const ReactIntermediateCards = () => {
 						}
 					/>
 					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								What is the useMemo hook?
+							</h2>
+						}
 						back={
 							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
+								<p className='text-md text-gray-700'>
+									Used to memoize (remember) the result of a calculation so it
+									doesn’t run again unless inputs change.
+								</p>
 								<a
 									className='text-blue-600 underline hover:text-blue-800'
 									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
@@ -139,13 +182,20 @@ const ReactIntermediateCards = () => {
 			<div className='flex justify-center items-center mt-10 '>
 				<div className='grid gird-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
 					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								what is the useLayoutEffect hook?
+							</h2>
+						}
 						back={
 							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
+								<p className='text-md text-gray-700'>
+									Like useEffect but fires before the screen paints. Useful for
+									measuring layout
+								</p>
 								<a
 									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
+									href='https://react.dev/reference/react/useLayoutEffect'
 									target='_blank'>
 									Explanation
 								</a>
