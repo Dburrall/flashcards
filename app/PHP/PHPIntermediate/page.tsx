@@ -6,7 +6,7 @@ import Image from "next/image";
 import Flashcard from "@/app/src/Styles/components/Flashcard";
 import Link from "next/link";
 
-const RubyIntermediate = () => {
+const PHPIntermediate = () => {
 	return (
 		<div className='bg-[#03071280]  mt-12'>
 			<h1 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-[#f7df1e]'>
@@ -88,7 +88,7 @@ const RubyIntermediate = () => {
 			{/* START OF {insert} SECTION  */}
 
 			<h2 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-sky-500'>
-				Ruby
+				PHP
 			</h2>
 			<div className='flex justify-center items-center mt-10 '>
 				<div className='grid gird-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
@@ -184,7 +184,7 @@ const RubyIntermediate = () => {
 			</div>
 			{/* START OF GENERAL QUESTIONS */}
 			<h2 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-pink-500'>
-				Advance Ruby
+				Advance PHP
 			</h2>
 			<div className='flex justify-center items-center mt-10 '>
 				<div className='grid gird-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
@@ -242,4 +242,4 @@ const RubyIntermediate = () => {
 	);
 };
 
-export default RubyIntermediate;
+export default PHPIntermediate;

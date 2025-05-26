@@ -31,9 +31,9 @@ export default function Home() {
 						Drupal
 					</a>
 					<a
-						className='rounded-full  border border-[#701516] transition-colors flex items-center justify-center hover:bg-[#701516]  dark:hover:text-white hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
-						href='/Ruby'>
-						Ruby
+						className='rounded-full  border border-[#8892BF] transition-colors flex items-center justify-center hover:bg-[#8892BF]  dark:hover:text-white hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
+						href='/PHP'>
+						PHP
 					</a>
 				</div>
 			</main>
