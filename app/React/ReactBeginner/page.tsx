@@ -5,7 +5,6 @@ import React from "react";
 import Image from "next/image";
 import Flashcard from "@/app/src/Styles/components/Flashcard";
 import Link from "next/link";
-import ReactCards from "./ReactCards";
 
 const ReactCards = () => {
 	return (
