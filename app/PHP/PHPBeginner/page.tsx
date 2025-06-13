@@ -13,7 +13,7 @@ const PHPBeginner = () => {
 				The Basics
 			</h1>
 			<div className='flex justify-center items-center '>
-				<div className='grid gird-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
+				<div className='grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
 					<Flashcard
 						front={
 							<h2 className='text-xl font-bold text-black '>
@@ -69,7 +69,7 @@ const PHPBeginner = () => {
 				</div>
 			</div>
 			<div className='flex justify-center items-center mt-10 '>
-				<div className='grid gird-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
+				<div className='grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
 					<Flashcard
 						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
 						back={
@@ -121,7 +121,7 @@ const PHPBeginner = () => {
 				PHP
 			</h2>
 			<div className='flex justify-center items-center mt-10 '>
-				<div className='grid gird-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
+				<div className='grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
 					<Flashcard
 						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
 						back={
@@ -167,7 +167,7 @@ const PHPBeginner = () => {
 				</div>
 			</div>
 			<div className='flex justify-center items-center mt-10 '>
-				<div className='grid gird-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
+				<div className='grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
 					<Flashcard
 						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
 						back={
@@ -217,7 +217,7 @@ const PHPBeginner = () => {
 				General PHP
 			</h2>
 			<div className='flex justify-center items-center mt-10 '>
-				<div className='grid gird-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
+				<div className='grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
 					<Flashcard
 						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
 						back={
