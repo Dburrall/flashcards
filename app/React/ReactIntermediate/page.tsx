@@ -37,20 +37,27 @@ const ReactIntermediateCards = () => {
 						}
 						back={
 							<p className='text-md text-gray-700'>
-								To fetch data in a React component, I typically use the
+								To fetch data in a React component, you typically use the
 								useEffect hook for side effects and useState to manage the data,
 								loading, and error states.
 							</p>
 						}
 					/>
 					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								Why use cleanup functions in useEffects?
+							</h2>
+						}
 						back={
 							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
+								<p className='text-md text-gray-700'>
+									To prevent memory leaks (like with timer & event listeners) &
+									clean up side effects (ubsubscribe from a data stream)
+								</p>
 								<a
 									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
+									href='https://blog.logrocket.com/understanding-react-useeffect-cleanup-function/'
 									target='_blank'>
 									Explanation
 								</a>
@@ -62,10 +69,18 @@ const ReactIntermediateCards = () => {
 			<div className='flex justify-center items-center mt-10 '>
 				<div className='grid gird-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
 					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								What causes a component to re-render?
+							</h2>
+						}
 						back={
 							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
+								<ul className='text-md text-gray-700'>
+									<li>if state or props change</li>{" "}
+									<li>its parent re-renders</li>
+									<li>A context value it consumes changes</li>
+								</ul>
 								<a
 									className='text-blue-600 underline hover:text-blue-800'
 									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
@@ -76,13 +91,20 @@ const ReactIntermediateCards = () => {
 						}
 					/>
 					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								What is suspense in React?
+							</h2>
+						}
 						back={
 							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
+								<p className='text-md text-gray-700'>
+									Suspense lets you lazy-load components or data and shows a
+									fallback while it's loading
+								</p>
 								<a
 									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
+									href='https://react.dev/reference/react/Suspense'
 									target='_blank'>
 									Explanation
 								</a>
@@ -90,13 +112,21 @@ const ReactIntermediateCards = () => {
 						}
 					/>
 					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								How does React.memo work
+							</h2>
+						}
 						back={
 							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
+								<p className='text-md text-gray-700'>
+									React.memo is a HOC that prevents functional components from
+									re-rendering unless their props change. Useful for performance
+									optimization.
+								</p>
 								<a
 									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
+									href='https://react.dev/reference/react/memo'
 									target='_blank'>
 									Explanation
 								</a>
@@ -203,6 +233,27 @@ const ReactIntermediateCards = () => {
 						}
 					/>
 					<Flashcard
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								What is the difference between useMemo & useCallback?
+							</h2>
+						}
+						back={
+							<div className='block'>
+								<p className='text-md text-gray-700'>
+									useMemo caches the return value of a function. useCallback
+									caches the function definition itself.
+								</p>
+								<a
+									className='text-blue-600 underline hover:text-blue-800'
+									href='https://www.freecodecamp.org/news/difference-between-usememo-and-usecallback-hooks/'
+									target='_blank'>
+									Explanation
+								</a>
+							</div>
+						}
+					/>
+					{/* <Flashcard
 						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
 						back={
 							<div className='block'>
@@ -215,25 +266,11 @@ const ReactIntermediateCards = () => {
 								</a>
 							</div>
 						}
-					/>
-					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
-						back={
-							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
-								<a
-									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
-									target='_blank'>
-									Explanation
-								</a>
-							</div>
-						}
-					/>
+					/> */}
 				</div>
 			</div>
 			{/* START OF GENERAL QUESTIONS */}
-			<h2 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-pink-500'>
+			{/* <h2 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-pink-500'>
 				Advanced React Questions
 			</h2>
 			<div className='flex justify-center items-center mt-10 '>
@@ -281,7 +318,7 @@ const ReactIntermediateCards = () => {
 						}
 					/>
 				</div>
-			</div>
+			</div> */}
 
 			<Link
 				href='/'

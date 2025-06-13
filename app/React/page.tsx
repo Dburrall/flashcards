@@ -21,9 +21,9 @@ const ReactPage = () => {
 					</Link>
 
 					<Link
-						className='rounded-full border border-[#10B981] transition-colors flex items-center justify-center hover:bg-[#10B981] dark:hover:text-black hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
+						className='rounded-full border pointer-events-none  border-[#10B981] transition-colors flex items-center justify-center hover:bg-[#10B981] dark:hover:text-black hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
 						href='/React/ReactStudy'>
-						Study sheet
+						Study sheet (coming soon!)
 					</Link>
 
 					<Link

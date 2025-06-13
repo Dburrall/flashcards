@@ -247,9 +247,13 @@ const JavascriptCards = () => {
 						}
 						back={
 							<p className='text-md text-gray-700'>
-								A regular <b>function</b> is a standalone block of code that you
-								can define and call independently.A <b>method</b> is a function
-								that's attached to an object and is called using that object.
+								A regular{" "}
+								<span className='text-sky-500 font-bold'>function</span> is a
+								standalone block of code that you can define and call
+								independently.A{" "}
+								<span className='text-sky-500 font-bold'>method</span> is a
+								function that's attached to an object and is called using that
+								object.
 							</p>
 						}
 					/>
@@ -312,28 +316,41 @@ const JavascriptCards = () => {
 						}
 					/>
 					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								What is the difference between synchronous and asynchronous
+								code?
+							</h2>
+						}
 						back={
 							<ul className='text-md text-gray-700'>
-								Answer
-								<a
-									className='text-blue-600 underline hover:text-blue-800'
-									href='https://www.zhenghao.io/posts/react-rerender'
-									target='_blank'>
-									{" "}
-									Explanation
-								</a>
+								<li>
+									<span className='text-sky-500 font-bold'>Synchronous:</span>{" "}
+									Blocks execution until it's done
+								</li>
+								<li>
+									<span className='text-sky-500 font-bold'>Asynchronous:</span>{" "}
+									Allows other code to run while waiting
+								</li>
 							</ul>
 						}
 					/>
 					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								What is the spread operator (...) used for?
+							</h2>
+						}
 						back={
 							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
+								<ul className='text-md text-gray-700'>
+									<li>Expand arrays or objects</li>
+									<li>Clone or merge arrays/objects</li>
+									<li>Pass multiple arguments to a function</li>
+								</ul>
 								<a
 									className='text-blue-600 underline hover:text-blue-800'
-									href='https://react.dev/learn/rendering-lists'
+									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax'
 									target='_blank'>
 									Explanation
 								</a>
