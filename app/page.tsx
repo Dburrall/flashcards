@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
 	return (
-		<div className='grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 sm:max-w-2.5 md:max-w-none font-[family-name:var(--font-geist-sans)]'>
+		<div className='grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16  sm:max-w-2.5 md:max-w-none font-[family-name:var(--font-geist-sans)]'>
 			<main className='flex flex-col gap-[32px] row-start-2 items-center sm:items-start'>
 				<h1 className='text-2xl sm: pl-4 md:pl-0'>
 					Fullstack Flash Cards Online
@@ -15,7 +15,7 @@ export default function Home() {
 					</li>
 				</ol>
 
-				<div className='flex gap-4 items-center flex-col sm:flex-row'>
+				<div className='flex gap-4 items-center flex-col sm:flex-row  md:grid md:grid-cols-3 md:grid-rows-2 lg:flex-row'>
 					<a
 						href='/React'
 						className='rounded-full  border border-[#61dafb] hover:border-[#61dafb] transition-colors flex items-center justify-center hover:bg-[#61dafb] dark:hover:text-black  font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'>
