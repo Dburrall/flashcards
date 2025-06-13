@@ -35,7 +35,18 @@ export default function Home() {
 					<a
 						className='rounded-full pointer-events-none   border border-[#8892BF] transition-colors flex items-center justify-center hover:bg-[#8892BF]  dark:hover:text-white hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
 						href='/PHP'>
-						PHP (coming soon!)
+						PHP
+						<span className='text-xs ml-[0.2rem] text-amber-300'>
+							Coming soon!
+						</span>
+					</a>
+					<a
+						className='rounded-full pointer-events-none   border border-[#43853d] transition-colors flex items-center justify-center hover:bg-[#43853d]  dark:hover:text-white hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
+						href='/Node'>
+						Node
+						<span className='text-xs ml-[0.2rem] text-amber-300'>
+							Coming soon!
+						</span>
 					</a>
 				</div>
 			</main>
