@@ -28,22 +28,22 @@ export default function Home() {
 				<div className='flex gap-4 items-center flex-col sm:flex-row  md:grid md:grid-cols-3 md:grid-rows-2 lg:flex-row'>
 					<a
 						href='/React'
-						className='rounded-full  border border-[#61dafb] hover:border-[#61dafb] transition-colors flex items-center justify-center hover:bg-[#61dafb] dark:hover:text-black  font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'>
+						className='rounded-full  border border-[#61dafb] hover:border-[#61dafb] transition-colors flex items-center justify-center hover:bg-[#61dafb] dark:hover:text-black  font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto '>
 						React
 					</a>
 					<a
-						className='rounded-full border border-[#f7df1e] transition-colors flex items-center justify-center hover:bg-[#f7df1e] dark:hover:text-black hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
+						className='rounded-full border border-[#f7df1e] transition-colors flex items-center justify-center hover:bg-[#f7df1e] dark:hover:text-black hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto '
 						href='/Javascript'>
 						Javascript
 					</a>
 
 					<a
-						className='rounded-full  border border-[#0077b5] transition-colors flex items-center justify-center hover:bg-[#0077b5]  dark:hover:text-white hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
+						className='rounded-full  border border-[#0077b5] transition-colors flex items-center justify-center hover:bg-[#0077b5]  dark:hover:text-white hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto '
 						href='/Drupal'>
 						Drupal
 					</a>
 					<a
-						className='rounded-full pointer-events-none   border border-[#8892BF] transition-colors flex items-center justify-center hover:bg-[#8892BF]  dark:hover:text-white hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
+						className='rounded-full pointer-events-none   border border-[#8892BF] transition-colors flex items-center justify-center hover:bg-[#8892BF]  dark:hover:text-white hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto '
 						href='/PHP'>
 						PHP
 						<span className='text-xs ml-[0.2rem] text-amber-300'>
@@ -51,7 +51,7 @@ export default function Home() {
 						</span>
 					</a>
 					<a
-						className='rounded-full pointer-events-none   border border-[#43853d] transition-colors flex items-center justify-center hover:bg-[#43853d]  dark:hover:text-white hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]'
+						className='rounded-full pointer-events-none   border border-[#43853d] transition-colors flex items-center justify-center hover:bg-[#43853d]  dark:hover:text-white hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto '
 						href='/Node'>
 						Node
 						<span className='text-xs ml-[0.2rem] text-amber-300'>
