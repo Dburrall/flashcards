@@ -11,7 +11,7 @@ const ReactPage = () => {
 				<div className='flex gap-4 items-center flex-col sm:flex-row'>
 					<Link
 						href='/Javascript/JavascriptBeginner'
-						className='rounded-full border border-[#f7df1e] transition-colors flex items-center justify-center hover:bg-[#5B9BD5] dark:hover:text-black hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto'>
+						className='rounded-full border border-[#f7df1e] transition-colors flex items-center justify-center hover:bg-[#f7df1e] dark:hover:text-black hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto'>
 						Beginner
 					</Link>
 					<Link

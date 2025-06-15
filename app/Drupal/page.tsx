@@ -11,7 +11,7 @@ const ReactPage = () => {
 				<div className='flex gap-4 items-center flex-col sm:flex-row'>
 					<Link
 						href='/Drupal/DrupalBeginner'
-						className='rounded-full border border-[#0077b5] transition-colors flex items-center justify-center hover:bg-[#5B9BD5] dark:hover:text-black hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto '>
+						className='rounded-full border border-[#0077b5] transition-colors flex items-center justify-center hover:bg-[#5B9BD5] dark:hover:text-white hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto '>
 						Beginner
 					</Link>
 					<Link

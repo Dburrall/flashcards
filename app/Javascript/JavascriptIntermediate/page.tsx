@@ -235,7 +235,7 @@ const JavascriptIntermediateCards = () => {
 
 			<Link
 				href='/'
-				className='rounded-full white border border-indigo-600 transition-colors flex items-center justify-center bg-white text-background gap-2  dark:hover:bg-[black] dark:hover:text-white font-medium text-sm sm:text-base h-10 md:w-42 mx-auto mt-8 sm:h-12 px-4 sm:px-5 w-32 mb-12'>
+				className='rounded-full white border border-indigo-600 transition-colors flex items-center justify-center  hover:bg-indigo-600 gap-2  text-white font-medium text-sm sm:text-base h-10 md:w-42 mx-auto mt-8 sm:h-12 px-4 sm:px-5 w-32 mb-12'>
 				Homepage
 			</Link>
 		</div>
