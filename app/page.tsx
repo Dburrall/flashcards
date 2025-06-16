@@ -6,10 +6,14 @@ export default function Home() {
 	const [quote, setQuote] = useState<string | null>(null); //typescript sucks and you have to tell it that it starts as null then becomes a string later
 
 	useEffect(() => {
-		fetch("https://api.quotable.io/random")
+		fetch("/quotes.json")
 			.then((res) => res.json())
-			.then((data) => setQuote(`${data.content} — ${data.author}`))
-			.catch((err) => setQuote("Error fetching quote."));
+			.then((data) => {
+				const quotes = data.quotes;
+				const random = quotes[Math.floor(Math.random() * quotes.length)];
+				setQuote(`${random.quote} — ${random.author}`);
+			})
+			.catch(() => setQuote("Error loading quote."));
 	}, []);
 	return (
 		<div className='grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16  sm:max-w-2.5 md:max-w-none font-[family-name:var(--font-geist-sans)]'>
