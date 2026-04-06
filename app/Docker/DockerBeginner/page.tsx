@@ -6,7 +6,7 @@ import Image from "next/image";
 import Flashcard from "@/app/src/Styles/components/Flashcard";
 import Link from "next/link";
 
-const PHPBeginner = () => {
+const DockerBeginner = () => {
 	return (
 		<div className='bg-[#03071280]  mt-12'>
 			<h1 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-[#0db7ed]'>
@@ -25,11 +25,6 @@ const PHPBeginner = () => {
 									deploy, and run applications in lightweight, standardized
 									environments called containers.
 								</p>{" "}
-								<Image
-									alt='code snippet of an arrow function'
-									width={300}
-									height={500}
-								/>
 							</div>
 						}
 					/>
@@ -126,7 +121,7 @@ const PHPBeginner = () => {
 			{/* START OF {insert} SECTION  */}
 
 			<h2 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-sky-500'>
-				PHP
+				Docker
 			</h2>
 			<div className='flex justify-center items-center mt-10 '>
 				<div className='grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
@@ -222,7 +217,7 @@ const PHPBeginner = () => {
 			</div>
 			{/* START OF GENERAL QUESTIONS */}
 			<h2 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-pink-500'>
-				General PHP
+				General Docker
 			</h2>
 			<div className='flex justify-center items-center mt-10 '>
 				<div className='grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
@@ -280,4 +275,4 @@ const PHPBeginner = () => {
 	);
 };
 
-export default PHPBeginner;
+export default DockerBeginner;
