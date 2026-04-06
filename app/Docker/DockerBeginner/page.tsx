@@ -9,22 +9,23 @@ import Link from "next/link";
 const PHPBeginner = () => {
 	return (
 		<div className='bg-[#03071280]  mt-12'>
-			<h1 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-[#8892BF]'>
+			<h1 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-[#0db7ed]'>
 				The Basics
 			</h1>
 			<div className='flex justify-center items-center '>
 				<div className='grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
 					<Flashcard
 						front={
-							<h2 className='text-xl font-bold text-black '>
-								How do you declare a variable?
-							</h2>
+							<h2 className='text-xl font-bold text-black '>What is Docker?</h2>
 						}
 						back={
 							<div className='block'>
-								<p className='text-md text-gray-700 '>with the $ sign</p>{" "}
+								<p className='text-md text-gray-700 '>
+									an open-source platform that allows developers to build,
+									deploy, and run applications in lightweight, standardized
+									environments called containers.
+								</p>{" "}
 								<Image
-									src='/PHP-Variable.png'
 									alt='code snippet of an arrow function'
 									width={300}
 									height={500}
@@ -35,31 +36,31 @@ const PHPBeginner = () => {
 					<Flashcard
 						front={
 							<h2 className='text-xl font-bold text-black '>
-								What is the difference between echo and print?
+								What is a Container?
 							</h2>
 						}
 						back={
 							<p className='text-md text-gray-700'>
-								Both output data: Echo can output multiple values and is faster.
-								Print returns 1 so it can be used in expressions
+								an isolated environment that packages an application along with
+								all its dependencies.
 							</p>
 						}
 					/>
 					<Flashcard
 						front={
 							<h2 className='text-xl font-bold text-black '>
-								When should you use double quotes ("")
+								What is Docker Compose?
 							</h2>
 						}
 						back={
 							<div className='block'>
 								<p className='text-md text-gray-700'>
-									Used for Variable Interpolation as well as allow escape
-									sequences
+									a tool that allows you to define and run multi-container
+									applications using a single YAML file.
 								</p>
 								<a
 									className='text-blue-600 underline hover:text-blue-800'
-									href='https://stackoverflow.com/questions/3446216/what-is-the-difference-between-single-quoted-and-double-quoted-strings-in-php'
+									href='https://docs.docker.com/compose/'
 									target='_blank'>
 									Explanation
 								</a>
@@ -71,13 +72,20 @@ const PHPBeginner = () => {
 			<div className='flex justify-center items-center mt-10 '>
 				<div className='grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
 					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								What is a Cgroup used for?
+							</h2>
+						}
 						back={
 							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
+								<p className='text-md text-gray-700'>
+									To limit and isolate the usage of different containers such as
+									CPU usage.
+								</p>
 								<a
 									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
+									href='https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html'
 									target='_blank'>
 									Explanation
 								</a>

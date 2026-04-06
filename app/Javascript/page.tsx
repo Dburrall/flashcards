@@ -24,8 +24,8 @@ const ReactPage = () => {
 					</Link>
 
 					<Link
-						className='rounded-full border pointer-events-none  border-[#10B981] transition-colors flex items-center justify-center hover:bg-[#10B981] dark:hover:text-black hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto '
-						href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app'>
+						className='rounded-full border   border-[#10B981] transition-colors flex items-center justify-center hover:bg-[#10B981] dark:hover:text-black hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto '
+						href='/Javascript/JavascriptStudy'>
 						Practice
 						<span className='text-xs ml-[0.2rem] text-amber-300'>
 							Coming soon!

@@ -47,9 +47,9 @@ export default function Home() {
 						Drupal
 					</a>
 					<a
-						className='rounded-full pointer-events-none   border border-[#8892BF] transition-colors flex items-center justify-center hover:bg-[#8892BF]  dark:hover:text-white hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto '
-						href='/PHP'>
-						PHP
+						className='rounded-full pointer-events-none   border border-[#0db7ed] transition-colors flex items-center justify-center hover:bg-[#8892BF]  dark:hover:text-white hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto '
+						href='/Docker'>
+						Docker
 						<span className='text-xs ml-[0.2rem] text-amber-300'>
 							Coming soon!
 						</span>
