@@ -53,6 +53,7 @@ const DockerBeginner = () => {
 									a tool that allows you to define and run multi-container
 									applications using a single YAML file.
 								</p>
+
 								<a
 									className='text-blue-600 underline hover:text-blue-800'
 									href='https://docs.docker.com/compose/'
@@ -64,6 +65,79 @@ const DockerBeginner = () => {
 					/>
 				</div>
 			</div>
+			<div className='flex justify-center items-center mt-10 '>
+				<div className='grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
+					<Flashcard
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								What is Docker registery?
+							</h2>
+						}
+						back={
+							<div className='block'>
+								<p className='text-md text-gray-700'>
+									An image registry is a centralized location for storing and
+									sharing your container images.
+								</p>
+								<a
+									className='text-blue-600 underline hover:text-blue-800'
+									href='https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-registry/'
+									target='_blank'>
+									Explanation
+								</a>
+							</div>
+						}
+					/>
+					<Flashcard
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								What is a Docker Image?
+							</h2>
+						}
+						back={
+							<div className='block'>
+								<p className='text-md text-gray-700'>
+									An image is a static blueprint. It contains everything needed
+									to create a running environment
+								</p>
+							</div>
+						}
+					/>
+					<Flashcard
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								What is a Dockerfile?
+							</h2>
+						}
+						back={
+							<div className='block'>
+								<p className='text-md text-gray-700'>
+									A Dockerfile is a text file with instructions Docker follows
+									to build an image.
+								</p>
+								<Image
+									src='/DockerFile.png'
+									alt='Image of a Docker File'
+									width={300}
+									height={500}
+								/>
+								<a
+									className='text-blue-600 underline hover:text-blue-800'
+									href='https://docs.docker.com/get-started/docker-concepts/building-images/writing-a-dockerfile/'
+									target='_blank'>
+									Explanation
+								</a>
+							</div>
+						}
+					/>
+				</div>
+			</div>
+
+			{/* START OF {insert} SECTION  */}
+
+			<h2 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-sky-500'>
+				Docker
+			</h2>
 			<div className='flex justify-center items-center mt-10 '>
 				<div className='grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
 					<Flashcard
@@ -87,49 +161,21 @@ const DockerBeginner = () => {
 							</div>
 						}
 					/>
-					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
-						back={
-							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
-								<a
-									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
-									target='_blank'>
-									Explanation
-								</a>
-							</div>
-						}
-					/>
-					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
-						back={
-							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
-								<a
-									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
-									target='_blank'>
-									Explanation
-								</a>
-							</div>
-						}
-					/>
-				</div>
-			</div>
 
-			{/* START OF {insert} SECTION  */}
-
-			<h2 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-sky-500'>
-				Docker
-			</h2>
-			<div className='flex justify-center items-center mt-10 '>
-				<div className='grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
 					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								What is the Docker daemon?
+							</h2>
+						}
 						back={
 							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
+								<p className='text-md text-gray-700'>
+									The Docker daemon (dockerd) is the background service that
+									does the actual work: building images, running containers,
+									managing networks and volumes. It listens for API requests and
+									carries them out.
+								</p>
 								<a
 									className='text-blue-600 underline hover:text-blue-800'
 									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
@@ -140,123 +186,20 @@ const DockerBeginner = () => {
 						}
 					/>
 					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
-						back={
-							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
-								<a
-									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
-									target='_blank'>
-									Explanation
-								</a>
-							</div>
+						front={
+							<h2 className='text-xl font-bold text-black '>
+								What are Volumes in Docker?
+							</h2>
 						}
-					/>
-					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
 						back={
 							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
+								<p className='text-md text-gray-700'>
+									Volumes are persistent data stores for containers, created and
+									managed by Docker.
+								</p>
 								<a
 									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
-									target='_blank'>
-									Explanation
-								</a>
-							</div>
-						}
-					/>
-				</div>
-			</div>
-			<div className='flex justify-center items-center mt-10 '>
-				<div className='grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
-					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
-						back={
-							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
-								<a
-									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
-									target='_blank'>
-									Explanation
-								</a>
-							</div>
-						}
-					/>
-					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
-						back={
-							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
-								<a
-									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
-									target='_blank'>
-									Explanation
-								</a>
-							</div>
-						}
-					/>
-					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
-						back={
-							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
-								<a
-									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
-									target='_blank'>
-									Explanation
-								</a>
-							</div>
-						}
-					/>
-				</div>
-			</div>
-			{/* START OF GENERAL QUESTIONS */}
-			<h2 className='flex justify-center mb-6 mt-6 font-bold text-3xl text-pink-500'>
-				General Docker
-			</h2>
-			<div className='flex justify-center items-center mt-10 '>
-				<div className='grid grid-cols-1 md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-4 '>
-					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
-						back={
-							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
-								<a
-									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
-									target='_blank'>
-									Explanation
-								</a>
-							</div>
-						}
-					/>
-					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
-						back={
-							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
-								<a
-									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
-									target='_blank'>
-									Explanation
-								</a>
-							</div>
-						}
-					/>
-					<Flashcard
-						front={<h2 className='text-xl font-bold text-black '>Question</h2>}
-						back={
-							<div className='block'>
-								<p className='text-md text-gray-700'>Answer</p>
-								<a
-									className='text-blue-600 underline hover:text-blue-800'
-									href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Equality_comparisons_and_sameness'
+									href='https://docs.docker.com/engine/storage/volumes/'
 									target='_blank'>
 									Explanation
 								</a>
